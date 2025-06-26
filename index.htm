@@ -1,6 +1,3 @@
-Sure! Below is the updated HTML code with the "Created by MiniMax Agent" text removed from both the header and footer:
-
-```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +5,7 @@ Sure! Below is the updated HTML code with the "Created by MiniMax Agent" text re
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Local Events</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -126,7 +124,6 @@ Sure! Below is the updated HTML code with the "Created by MiniMax Agent" text re
       background-color: #1e7e34;
     }
 
-    /* Responsive Design */
     @media (min-width: 600px) {
       .featured-events,
       .popular-events {
@@ -142,6 +139,80 @@ Sure! Below is the updated HTML code with the "Created by MiniMax Agent" text re
     @media (min-width: 900px) {
       .event {
         width: calc(33.333% - 20px);
+      }
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 40px 20px 20px;
+      font-size: 0.9em;
+    }
+
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-section h3 {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+      color: #fff;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .footer-section ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-section a {
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: #fff;
+    }
+
+    .social-icons a {
+      font-size: 1.2em;
+      margin-right: 15px;
+      text-decoration: none;
+      color: #ccc;
+    }
+
+    .social-icons a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      border-top: 1px solid #444;
+      padding-top: 15px;
+      margin-top: 30px;
+      color: #aaa;
+    }
+
+    @media (min-width: 768px) {
+      .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .footer-section {
+        flex: 1;
+        padding: 0 10px;
       }
     }
   </style>
@@ -230,13 +301,37 @@ Sure! Below is the updated HTML code with the "Created by MiniMax Agent" text re
       <a href="/signup">Get Started</a>
     </section>
   </main>
+
+  <!-- Modern Footer Starts Here -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>About LocalEvents</h3>
+        <p>Your go-to platform for discovering, creating, and promoting local events in your community.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/signup">Sign Up</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 LocalEvents. All rights reserved. | <a href="/terms">Terms</a> | <a href="/privacy">Privacy</a></p>
+    </div>
+  </footer>
 </body>
 
 </html>
-```
-
-### **Changes Made:**
-- **Header**: Changed the `<h1>` text from "Created by MiniMax Agent" to "Local Events".
-- **Footer**: Removed the "Created by MiniMax Agent" text entirely.
-
-Feel free to further customize the title or any other elements as needed!
